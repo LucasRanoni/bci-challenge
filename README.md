@@ -46,6 +46,9 @@ docker-compose down
 
 Para probar la API, puedes utilizar Swagger, que proporciona una interfaz gráfica para interactuar con los recursos disponibles.
 
+> **Observación** : 
+> En caso de utilizar otra aplicación ejemplo: Postman, se debera agregar una autenticación de tipo "Basic Auth" con username "bci" y password "1234" 
+
 ## Swagger Ui
 
 La documentación interactiva de la API está disponible en http://localhost:8080/swagger-ui/index.html#/. Aquí podrás ver todos los endpoints y realizar pruebas directamente desde el navegador.
