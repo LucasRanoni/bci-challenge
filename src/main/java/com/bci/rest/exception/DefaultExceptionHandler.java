@@ -38,7 +38,7 @@ public class DefaultExceptionHandler {
         return responseWithError(exception, defaultErrorResponse);
     }
 
-    @ExceptionHandler({EmailAlreadyExistsException.class, EmailException.class})
+    @ExceptionHandler({EmailAlreadyExistsException.class, EmailException.class, PasswordException.class})
     public ResponseEntity<DefaultErrorResponse> handle(RuntimeException exception) {
         DefaultErrorResponse defaultErrorResponse = new DefaultErrorResponse(HttpStatus.BAD_REQUEST, exception.getMessage());
         return responseWithError(exception, defaultErrorResponse);
